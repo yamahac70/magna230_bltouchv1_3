@@ -21,7 +21,7 @@ LeaderOS is a project based on the [Marlin](https://github.com/MarlinFirmware/Ma
 
 ## extras
 en caso de necesitar cambiar pines por rotura de TH1 se encuentra en la siguiente ruta 
-"C:\Users\mja-pc\.platformio\packages\framework-arduinoststm32\variants\MARLIN_F4x7Vx"
+"C:\Users\(usuario)\.platformio\packages\framework-arduinoststm32\variants\MARLIN_F4x7Vx"
 variant.h
 
 ## faltantes 
