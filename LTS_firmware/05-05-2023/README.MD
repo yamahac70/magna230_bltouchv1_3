@@ -1,0 +1,1 @@
+<h2> esta version tiene el recorrido de la cama asistido por el nivelador 
