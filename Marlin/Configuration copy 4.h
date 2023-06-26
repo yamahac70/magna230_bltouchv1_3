@@ -1163,7 +1163,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 408.9000, 406.5400}
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 404, 406.54 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1701,7 +1701,7 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS X_BED_SIZE
+#define X_MAX_POS X_BED_SIZE +5
 #define Y_MAX_POS Y_BED_SIZE
 #define Z_MAX_POS 240
 //#define I_MIN_POS 0
@@ -2027,10 +2027,10 @@
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-//#define LCD_BED_TRAMMING //CAMBIO RECORRIDO DE LA CAMA
+#define LCD_BED_TRAMMING //CAMBIO RECORRIDO DE LA CAMA
 
 #if ENABLED(LCD_BED_TRAMMING)
-  #define BED_TRAMMING_INSET_LFRB { 45, 45, 35, 20 }  // (mm) Left, Front, Right, Back insets
+  #define BED_TRAMMING_INSET_LFRB { 100, 100, 45, 45 }  // (mm) Left, Front, Right, Back insets
   #define BED_TRAMMING_HEIGHT      0.0        // (mm) Z height of nozzle at leveling points
   #define BED_TRAMMING_Z_HOP       4.0        // (mm) Z height of nozzle between leveling points
   //#define BED_TRAMMING_INCLUDE_CENTER       // Move to the center after the last corner
